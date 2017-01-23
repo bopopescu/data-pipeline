@@ -6,6 +6,8 @@ You can find a detailed description about the project at http://ids-ph1.appspot.
 
 Author: Hexing Ren
 
+Resources: https://www.numbeo.com/cost-of-living/rankings_by_country.jsp
+
 ------------------------------------------------------------------------------------------------------------------------------
 ## Python Flask Skeleton for Google App Engine
 
