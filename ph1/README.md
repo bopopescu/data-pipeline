@@ -7,7 +7,6 @@ You can find a detailed description about the project at http://ids-ph1.appspot.
 Author: Hexing Ren
 
 
-================================================================================================
 ## Python Flask Skeleton for Google App Engine
 
 ![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
