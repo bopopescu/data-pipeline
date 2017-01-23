@@ -30,10 +30,6 @@
 					<a class="navbar-brand" href="http://www.hexingren.com/portfolio">&reg; Hexing Ren</a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="http://www.hexingren.com/portfolio#portfolio">BACK</a></li>
-					</ul>
-					
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="http://www.hexingren.com/portfolio#home">HOME</a></li>
 						<li><a href="http://www.hexingren.com/portfolio#about">ABOUT</a></li>
@@ -41,6 +37,7 @@
 						<li><a href="https://s3-us-west-2.amazonaws.com/hexingren/resume.pdf">RESUME</a></li>
 						<li><a href="http://www.hexingren.com/portfolio#portfolio">PORTFOLIO</a></li>
 						<li><a href="http://www.hexingren.com/portfolio#contact">CONTACT</a></li>
+						<li class="active"><a href="http://www.hexingren.com/portfolio#portfolio">BACK</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -49,19 +46,30 @@
 		<div class="container">
 			<!-- Main component for a primary marketing message or call to action -->
 			<div class="jumbotron">
-				<h2>Cost of Living Index by Country 2017</h2>
-				<iframe width="100%" height="600" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col1+from+1XqfnD4KO8ksOfDc3e9Nhb97_p0N3iEQp7SvTfoG9&amp;viz=MAP&amp;h=false&amp;lat=61.6842459833012&amp;lng=35.19627143750016&amp;t=1&amp;z=2&amp;l=col1&amp;y=2&amp;tmplt=3&amp;hml=GEOCODABLE"></iframe>
-				<p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-				<p>To see the difference between static and fixed top navbars, just scroll.</p>
+				<div class="row">
+				<div class="col-md-8"><h2>Cost of Living Index by Country 2017</h2></div>
+				<div class="col-md-4" align="right"><a type="button" class="btn btn-lg btn-default" href="https://www.numbeo.com/cost-of-living/cpi_explained.jsp" target="_blank">Indices Explanation</a></div>
+				</div><br>
+				<iframe width="100%" height="450" scrolling="auto" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col1+from+1XqfnD4KO8ksOfDc3e9Nhb97_p0N3iEQp7SvTfoG9&amp;viz=MAP&amp;h=false&amp;lat=61.6842459833012&amp;lng=35.19627143750016&amp;t=1&amp;z=2&amp;l=col1&amp;y=2&amp;tmplt=3&amp;hml=GEOCODABLE"></iframe><br><br>
+				<h3>Ask A Question</h3>
+				<p>How can we quickly check cost of living indix of a country or an area in the world? What is a rough distribution of countries and areas with low/high cost of living index?</p>
+				<h3>Answer It With Data</h3>
+				<p>We can mark the countries and areas in the world on a map with dots in different colors (the first 40 or so countries/areas with highest cost of living index are in <span style="color:#ff0000">red</span>; the 40 or so in the middle are in <span style="color:#800080">purple</span>; the last 40 or so are in <span style="color:#ffbf00">yellow</span>) as shown above. To find cost of living indices of a country or an area, we can locate it on the map and check out its indices by clicking the corresponding dot.</p>
+				<p>From the map, we can see that countries and areas with high cost of living index are mainly in Europe, Middle East, North and Central America, and East Asia. Most of them are coastal countries and areas. Countries and areas with low cost of living index are mainly in Africa, Central and South Asia, and South America. Most of them are landlocked countries and areas.</p>
+				<h3>References</h3>
+				<p>Data Source: <a href="https://www.numbeo.com/cost-of-living/rankings_by_country.jsp" target="_blank">https://www.numbeo.com</a></p>
 			</div>
+			<!-- START OF FOOTER -->
+			<footer class="container-footer text-center"><p class="copyright text-muted small">&copy; <a href="mailto:hexingren@gmail.com">Hexing Ren</a></p></footer>
+			<!-- END OF FOOTER -->
 		</div> <!-- /container -->
 		
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	</body>
 </html>
