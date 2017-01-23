@@ -2,5 +2,6 @@ Data Pipeline contains a series of projects providing a chance for hands-on, in-
 
 You can find a detailed description about the projects at http://www.hexingren.com/data-pipeline
 
-Author:
-Hexing Ren
+Author: Hexing Ren
+
+Resources: http://data.cmubi.org/
