@@ -1,3 +1,14 @@
+# Cost of Living Index by Country 2016
+
+The product is a web-enabled application that use data from Google Fusion Tables to answer a question about cost of living indeces of countries and areas in the world in 2016.
+
+You can find a detailed description about the project at http://ids-ph1.appspot.com
+
+Author: Hexing Ren
+
+Resources: https://www.numbeo.com/cost-of-living/rankings_by_country.jsp
+
+------------------------------------------------------------------------------------------------------------------------------
 ## Python Flask Skeleton for Google App Engine
 
 ![status: inactive](https://img.shields.io/badge/status-inactive-red.svg)
