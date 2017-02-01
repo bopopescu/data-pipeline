@@ -32,7 +32,7 @@ API_KEY = 'AIzaSyDlsbZQV6qhL36ONEcDhEBj7nUOehwcVMc'
 service = build('fusiontables', 'v1', developerKey=API_KEY)
 
 # This is the table id for the fusion table
-TABLE_ID = 'NxxxNXxXxxNxXXXXNXxXXXxXxxxNxXxNxXxxXxxX'
+TABLE_ID = '1Ddz7dqr8zhporApwCoLA5CiQhdaeP6ejW-BY9wDi'
 
 # This is the default columns for the query
 query_cols = []
