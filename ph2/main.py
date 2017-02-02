@@ -35,6 +35,7 @@ query_animals = ['DOG']
 from flask import Flask, request
 app = Flask(__name__)
 
+# retrieve data via a query
 def get_all_data(query):
     response = service.query().sql(sql=query).execute()
     return response
@@ -68,6 +69,7 @@ def make_query(cols, animals, limit):
 @app.route('/')
 def index():
     template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+    # get a list of column names for TABLE_ID
     request = service.column().list(tableId=TABLE_ID)
     allheaders = get_all_data(make_query([], query_animals, 1))
     logging.info('allheaders')
