@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Custom styles for this project -->
-    <link href="css/explore.css" rel="stylesheet">
   </head>
   
   <body>
@@ -53,9 +51,9 @@
       </div><br>
       <div>
       <form name='test'>
-        <input type="radio" name="field" value="one" onclick='check_value(1)' checked>Map Search
-        <input type="radio" name="field" value="two" onclick='check_value(2)'>Advanced Summary
-        <input type="radio" name="field" value="three" onclick='check_value(3)'> 
+        <input type="radio" name="field" value="one" onclick='check_value(1)' checked>&nbsp;Map Search&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="field" value="two" onclick='check_value(2)'>&nbsp;Advanced Summary&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="field" value="three" onclick='check_value(3)'>&nbsp;About Data&nbsp;&nbsp;&nbsp;
       </form>
       </div><br>
       <div id='imagedest'>
@@ -90,7 +88,7 @@
           document.getElementById("imagedest").innerHTML = '<iframe height="600px" width="100%" style="padding:1%; background:#ffffff; border:#ffffff;" src="https://view-awesome-table.com/-Kc-_PpM7h95FdoJhNzH/view"></iframe>';
             break;
         case 3:
-          document.getElementById("imagedest").innerHTML = ''; 
+          document.getElementById("imagedest").innerHTML = '<div style="height:600px; width:100%; padding:1%; background:#ffffff; border:#ffffff; text-align:center; overflow-y:scroll;"><h1>hhhhhhhhhhhhhhhhhhhhhh</h1><h1>hhhhhhhhhhhhhhhhhhhhhh</h1><h1>hhhhhhhhhhhhhhhhhhhhhh</h1><h1>hhhhhhhhhhhhhhhhhhhhhh</h1><h1>hhhhhhhhhhhhhhhhhhhhhh</h1></div>';
             break;
       }
     }
