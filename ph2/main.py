@@ -1,12 +1,5 @@
 """`main` is the top level module for your Flask application."""
 
-# Data Exploration Byte Version 1
-# 
-# Copyright 1/2016 Jennifer Mankoff
-#
-# Licensed under GPL v3 (http://www.gnu.org/licenses/gpl.html)
-#
-
 # Imports
 import os
 import jinja2
@@ -29,7 +22,7 @@ API_KEY = 'AIzaSyDlsbZQV6qhL36ONEcDhEBj7nUOehwcVMc'
 
 # This uses discovery to create an object that can talk to the 
 # fusion tables API using the developer key
-service = build('fusiontables', 'v1', developerKey=API_KEY)
+service = build('fusiontables', 'v2', developerKey=API_KEY)
 
 # This is the table id for the fusion table
 TABLE_ID = '1Ddz7dqr8zhporApwCoLA5CiQhdaeP6ejW-BY9wDi'
