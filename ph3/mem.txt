@@ -1,0 +1,19 @@
+[INSTANCE_NAME] mobile
+[ROOT_PASSWORD] @_________
+[USER_NAME] ph3
+[HOST] %
+[Cloud SQL instance connection name] ids-ph3:mobile
+[the IP the instance has obtained] 173.194.248.26
+[database name] ph3
+
+AWARE
+Study name: ids-ph3_mobile
+Study description: This is a study for ids-ph3_moible created by Hexing.
+Study database: Remote server
+Hostname: 173.194.248.26
+Port: 3306
+Database ph3
+Username: ph3
+Password: @_________
+
+
