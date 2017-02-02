@@ -89,15 +89,15 @@ def update_table():
     logging.info(result)
     return json.dumps({'content' : result['rows'], 'headers' : result['columns']})
 
-@app.route('/about')
-def about():
-    template = JINJA_ENVIRONMENT.get_template('templates/about.html')
-    return template.render()
-
-@app.route('/quality')
-def quality():
-    template = JINJA_ENVIRONMENT.get_template('templates/quality.html')
-    return template.render()
+#@app.route('/about')
+#def about():
+#    template = JINJA_ENVIRONMENT.get_template('templates/about.html')
+#    return template.render()
+#
+#@app.route('/quality')
+#def quality():
+#    template = JINJA_ENVIRONMENT.get_template('templates/quality.html')
+#    return template.render()
 
 @app.errorhandler(404)
 def page_not_found(e):
