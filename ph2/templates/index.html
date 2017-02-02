@@ -51,11 +51,13 @@
       <div class="col-md-8"><h2>Seattle Restaurant Week 2017</h2></div>
       <div class="col-md-4"></div>
       </div><br>
+      <div>
       <form name='test'>
-        <input type="radio" name="field" value="one" onclick='check_value(1)' checked>one 
-        <input type="radio" name="field" value="two" onclick='check_value(2)'>two 
-        <input type="radio" name="field" value="three" onclick='check_value(3)'>three 
+        <input type="radio" name="field" value="one" onclick='check_value(1)' checked>Map Search
+        <input type="radio" name="field" value="two" onclick='check_value(2)'>Advanced Summary
+        <input type="radio" name="field" value="three" onclick='check_value(3)'> 
       </form>
+      </div><br>
       <div id='imagedest'>
       <iframe height="600px" width="100%" style="padding:1%; background:#ffffff; border:#ffffff;" src="https://view-awesome-table.com/-KbwuVHQ_xeG3KOd1k--/view"></iframe></div>
 
@@ -88,7 +90,7 @@
           document.getElementById("imagedest").innerHTML = '<iframe height="600px" width="100%" style="padding:1%; background:#ffffff; border:#ffffff;" src="https://view-awesome-table.com/-Kc-_PpM7h95FdoJhNzH/view"></iframe>';
             break;
         case 3:
-          document.getElementById("imagedest").innerHTML = "<img src='black.jpg'>"; 
+          document.getElementById("imagedest").innerHTML = ''; 
             break;
       }
     }
