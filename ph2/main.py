@@ -102,7 +102,7 @@ def update_table():
 @app.errorhandler(404)
 def page_not_found(e):
     """Return a custom 404 error."""
-    return 'Sorry, Nothing at this URL.', 404
+    return 'The requested URL was not found on this server.', 404
 
 @app.errorhandler(500)
 def application_error(e):
