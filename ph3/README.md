@@ -1,13 +1,12 @@
-# Seattle Restaurant Week 2017
+# Exploring Personal Data
 
-The product is a web-enabled application that explores a data set about restaurants that participate in Settle Restaurant Week (SRW) in Spring 2017 based on the four Cs of data quality (i.e. Completeness, Coherence, Correctness, and aCcountability).
+The product is a web page that tells a story about personal mobile data using visualizations.
 
-You can find a detailed description about the project at http://ids-ph2.appspot.com
+You can find a detailed description about the project at http://ids-ph3.appspot.com
 
 Author: Hexing Ren
 
-Resources: http://srw.seattletimes.com/
-
+References: http://www.awareframework.com/
 ------------------------------------------------------------------------------------------------------------------------------
 ## Python Flask Skeleton for Google App Engine
 
