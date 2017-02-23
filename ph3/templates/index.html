@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" href="https://s3-us-west-2.amazonaws.com/hexingren/framework/img/r.png">
+    
+    <title>Hexing Ren | Exploring Personal Data</title>
+    <!-- Custom styles for this page -->
+    <link href="../css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  </head>
+  
+  <body>
+  <!-- Fixed navbar -->
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.hexingren.com/portfolio">&reg; Hexing Ren</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://www.hexingren.com/portfolio#home">HOME</a></li>
+          <li><a href="http://www.hexingren.com/portfolio#about">ABOUT</a></li>
+          <li><a href="http://www.hexingren.com/academics">ACADEMICS</a></li>
+          <li><a href="https://s3-us-west-2.amazonaws.com/hexingren/resume.pdf">RESUME</a></li>
+          <li><a href="http://www.hexingren.com/portfolio#portfolio">PORTFOLIO</a></li>
+          <li><a href="http://www.hexingren.com/portfolio#contact">CONTACT</a></li>
+          <li class="active"><a href="http://www.hexingren.com/data-pipeline">BACK</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="container">
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="row">
+      <div class="col-md-8"><h2>Exploring Personal Data</h2></div>
+      <div class="col-md-4"></div>
+      </div><br>
+      
+      <div class="row">
+      <div class="col-md-6">
+      <div>
+      <form name='test'>
+        <input type="radio" name="field" value="one" onclick='check_value(1)' checked>&nbsp;Network Type BAR&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="field" value="two" onclick='check_value(2)'>&nbsp;Places BAR&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="field" value="three" onclick='check_value(3)'>&nbsp;Screen Status BAR&nbsp;&nbsp;&nbsp;<br><br>
+        <input type="radio" name="field" value="four" onclick='check_value(4)'>&nbsp;Network Type PIE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="field" value="five" onclick='check_value(5)'>&nbsp;Places PIE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="field" value="six" onclick='check_value(6)'>&nbsp;Screen Status PIE&nbsp;&nbsp;&nbsp;
+      </form>
+      </div><br>
+      <div id='imagedest'>
+      <img src="https://s3-us-west-2.amazonaws.com/hexingren/Projects/Data+Pipeline/ph3/b_network.jpg" alt="Network Bar" style="width:100%;height:100%;"></div>
+      </div>
+      <div class="col-md-6">
+      <div style="height:600px; width:100%; padding:1%; background:#eee; border:#eee; text-align:left; overflow-y:scroll;">
+          <h3>Question</h3>
+          <p>As a person who is with his phone 24/7 all year round, I try to understand more about my daily life by analyzing the data collected by my phone. I'm interested in the ways I got access to network, places I visited, and how frequently I used my phone.</p>
+          <h3>Data Completeness</h3>
+          <p>I collected data from three sources: the network my phone was connected to, the places I have visited, and screen status of my phone. The data was collected between 1/18/2016 and 2/21/2016, and stored in three different tables using MySQL. The network type table contains 34200 entries. The place table contains 215 entries. The screen status contains 7325 entries. The difference in number is because of different time intervals I set to check for those indices. I set large time interval for checking the places I actually visited rather than the locations I passed. It includes information such as arrival time and departure time, which is different than the location index. I verified completeness of my data by randomly sampling from the entries and searching for missing values.</p>
+          <h3>Data Coherence</h3>
+          <p>Overall my data is coherent. I verified this by converting the first and the last timestamps to date, and found they correspond to the dates I started and ended my AWARE study. Also, I randomly sampled timestamps in the middle, and checedk the deviation between those selected timestamps and the timestamps before or after them. They all correspond to the corresponding interval I set for an index. Thus, I would draw the conclusion of my data coherence from a statistical standpoint.</p>
+          <h3>Data Correctness</h3>
+          <p>Taken the precision of GPS into consideration, I'd say all my data is reasonable and easy to interpret in some sense. I grouped some locations together since I know they are near my destinations. I looked through all the locations I collected to make sure its correctness. The other data looks fine too.</p>
+          <h3>Data Accountability</h3>
+          <p>The data is collected by my iphone with an <a href='http://www.awareframework.com/'>AWARE</a> software installed. Many well-known institutions (i.e. Carnegie Mellon University, Cornell University, etc) have been using this software. The raw data is private and only open to me.</p>
+          <h3>Things We Found</h3>
+          <p>When we first come to the page, it will show a bar chart of network type as default. What we can tell from this bar chart is that I used wifi much more than mobile network. LCZ-NetWork is my wifi network at home and CMU-SECURE is the one on campus. If we click the radius button of Network Type PIE, it will lead us to a pie chart, from which we can clearly see that I used home wifi in almost half of my time.</p>
+          <p>You may think I also stayed at home most of the time this month, which is not the case. If you clicked the radius button of Places Bar, you can clearly tell I stayed on campus almost all the time. From the corresponding pie chart, we can found that I spent almost 70% of my time in CMU.</p>
+          <p>Why is there this paradox? The reason is that I usually will turn off wifi on my way to school or back home. However, when I reach campus, I usually go directly to a lecture or whatever work in hand in which case I would be very likely to forget to turn on wifi again. So part of campus wifi access would be counted into mobile network. Each time I go home, I feel relaxed and am very likely to turn on wifi for music or video streaming. This explains why the time for home wifi won't lose.</p>
+          <p>The other places I usually go apart from campus and home are two restaurants I usually dine for lunches or dinners. I also went to Seven Springs for skiing for a whole day, so it records as twice considering the interval I set.</p>
+          <p>From the charts of screen status, we can tell the time my phone was on or off was fifty-fifty. The time it was locked or unlocked was also fifty-fifty. This reveals my style of interacting with my phone. I'm not very addicted to the screen. In fact, I face my laptop screen almost all day as a CS student, so I do try to avoid using too much 'technology' in leisure time.</p>
+          <h3>Design Thoughts</h3>
+          <p>In order to help readers to interact with the plots and to read the analysis at the same time, I split the page into the left and right parts. The left side is fixed, and readers can refer to any  one of the plots as they read the analysis on the right. Also, I keep the overflow text hidden to avoid an possibly overwhelming layout.</p>
+      </div>
+      </div>
+      </div> <!-- End of class="row" -->
+      
+
+      <!-- map with table -->
+      <!--div data-type="AwesomeTableView" data-viewID="-Kbx0n-vwWN2zbYxsekG"></div-->
+      <!-- advanced summary -->
+      <!--div data-type="AwesomeTableView" data-viewID="-KbwuVHQ_xeG3KOd1k--"></div-->
+    </div>
+    <!-- START OF FOOTER -->
+    <footer class="container-footer text-center"><p class="copyright text-muted small">&copy; <a href="mailto:hexingren@gmail.com">Hexing Ren</a></p></footer>
+    <!-- END OF FOOTER -->
+  </div> <!-- /container -->
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script language='JavaScript' type='text/javascript'>
+    function check_value(fieldvalue)
+    {    
+      switch(fieldvalue)
+      {
+        case 1:
+          document.getElementById("imagedest").innerHTML = '<img src="https://s3-us-west-2.amazonaws.com/hexingren/Projects/Data+Pipeline/ph3/b_network.jpg" alt="Network Bar" style="width:100%;height:100%;">';
+            break;
+        case 2:
+          document.getElementById("imagedest").innerHTML = '<img src="https://s3-us-west-2.amazonaws.com/hexingren/Projects/Data+Pipeline/ph3/b_places.jpg" alt="Place Bar" style="width:100%;height:100%;">';
+            break;
+        case 3:
+          document.getElementById("imagedest").innerHTML = '<img src="https://s3-us-west-2.amazonaws.com/hexingren/Projects/Data+Pipeline/ph3/b_screen.jpg" alt="Place Bar" style="width:100%;height:100%;">';
+            break;
+        
+        case 4:
+          document.getElementById("imagedest").innerHTML = '<img src="https://s3-us-west-2.amazonaws.com/hexingren/Projects/Data+Pipeline/ph3/p_network.jpg" alt="Network Bar" style="width:100%;height:100%;">';
+            break;
+        case 5:
+          document.getElementById("imagedest").innerHTML = '<img src="https://s3-us-west-2.amazonaws.com/hexingren/Projects/Data+Pipeline/ph3/p_places.jpg" alt="Place Bar" style="width:100%;height:100%;">';
+            break;
+        case 6:
+          document.getElementById("imagedest").innerHTML = '<img src="https://s3-us-west-2.amazonaws.com/hexingren/Projects/Data+Pipeline/ph3/p_screen.jpg" alt="Place Bar" style="width:100%;height:100%;">';
+            break;
+      }
+    }
+    </script>
+</body>
+</html>

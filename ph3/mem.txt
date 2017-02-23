@@ -1,5 +1,5 @@
 [INSTANCE_NAME] mobile
-[ROOT_PASSWORD] @_________
+[ROOT_PASSWORD] 15213
 [USER_NAME] ph3
 [HOST] %
 [Cloud SQL instance connection name] ids-ph3:mobile
