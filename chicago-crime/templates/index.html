@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Chicago Crime</title>
+    <link rel="icon" href="https://s3-us-west-2.amazonaws.com/hexingren/framework/img/r.png">
+    <link href="../css/footer.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://bootswatch.com/flatly/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/theme.css" rel="stylesheet">
+    
+
+  </head>
+  
+
+  <body role="document">
+  
+  	<!--div id="loading">
+  		<h2 style="position:absolute;top: 40%; left: 40%;"> Insert loading screen <h2>
+  	</div>
+	<div id ="contents"-->
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/time">Time Series</a></li>
+            <li><a href="/quality">Data Quality</a></li>
+            <li><a href="/team">Our Team</a></li>
+            <li><a href="/poster">Poster</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://www.hexingren.com/data-pipeline">Back</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+		<h1>Chicago Crime</h1>
+        <p>For our midterm project, we developed a visual data narrative and evaluated the data set. we chose to explore crime rates in Chicago. We specifically looked at the differences in the number of crimes for those classified
+        as non-violent and violent, and how seasonality and specific events in Chicago affect the crime rate as well. Chicago has a long history of having higher violent crime
+        rates than other big cities in America, like New York and Los Angeles. Our group was interested in looking at where and when crimes happened in Chicago and how
+        different seasons, holidays, and events around the city relate to crimes in different areas. The section below explores where crimes occur, while the <a href="/time">Time Series</a>
+        section explores when crimes occur in Chicago.
+        </p>
+        <p>We think that this information would be particularly useful to police departments to help them strategize where and when to station police officers based 
+        on knowledge of historical information of crimes. 
+        </p>
+      </div>
+
+
+   <div class="page-header">
+		<p>We first wanted to generally look at where and when crimes occur in Chicago. The graph below shows where and what time of day crimes were committed in Chicago from 2012-2016.
+			We found that the distributions for when crimes occur were fairly even across the day, however the maximum number usually occurred in the evening around 7 pm. 
+			The data also showed that the Garfield neighborhood on the west side of the city had the highest concentration of crime. </p>
+		<iframe width="100%" height="800" frameborder="0" src="https://carnegiemellon.carto.com/u/jasanche/builder/be3f5439-5685-44e7-b386-95461b80307f/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	
+	</div> 
+	
+	<div class="page-header">
+		<p>While the "Big Picture" data on when and where crimes occur across the city provided interesting insights, we also wanted to look at how different annual events in 
+		the city have an effect on crime. We chose to focus on two events, the St. Patrick’s Day Parade and 4th of July. The St. Patrick’s Day Parade is one of the biggest events
+		in the city, and has a set parade route. Many visitors come to the city for this event and the main parade is always followed by another parade the next day, the South
+		Side Irish Parade, in a different location in the city. The graph below shows where crime occurs in relation to the Saint Patrick's Day Parade route that is held around Navy
+		Pier in the North Side of the city. </p>
+		<iframe width="100%" height="800" frameborder="0" src="https://carnegiemellon.carto.com/u/jasanche/builder/4e9df950-0e46-11e7-acee-0e05a8b3e3d7/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	</div> 
+	
+	<div class="page-header">
+		<p>The graph below shows where crime occurs relative to the Saint Patrick's Day Parade in the south side of the city. While both graphs do show that crimes occur around these events, we found
+		that the number of crimes did not increase a significant amount on Saint Patrick's Day and there were no noticeable increases in crime around the parade routes compared to the normal amounts
+		at this time of year.</p>
+		<iframe width="100%" height="800" frameborder="0" src="https://carnegiemellon.carto.com/u/jasanche/builder/e10fe2f2-0f6f-4651-9de8-774679c476c0/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	</div>
+	
+	<div class="page-header">
+		<p> Based on the initial summary of the data (see <a href="/time">Time Series</a>), crimes happened more frequently in summer months. We decided to look at the 4th of July because it
+		is one of the most universally celebrated holidays during the summer. The graph below shows the locations of crimes on the Fourth of July around Navy Pier (which is 
+		the center of Fourth of July Celebrations in the city).</p>
+		<iframe width="100%" height="800" frameborder="0" src="https://carnegiemellon.carto.com/u/jasanche/builder/cacc0be8-0eb4-11e7-9652-0e233c30368f/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	</div>
+
+	<!-- START OF FOOTER -->
+  <footer class="container-footer text-center"><p class="copyright text-muted small">&copy; <a href="/team">Interactive Data Science Team</a></p></footer>
+  <!-- END OF FOOTER -->
+  </div> <!-- /container -->
+	<!--/div--> <!-- /contents -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
