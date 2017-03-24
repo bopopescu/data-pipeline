@@ -1,0 +1,25 @@
+# DATABASE: ph3
+
+# TABLES:
+locations 31161 {timestamp, double_latitude, double_longitude, double_altitude}
+[_id, timestamp, device_id, double_latitude, double_longitude, double_bearing, double_speed, double_altitude, provider, accuracy, label]
+
+
+locations_visit 215 {timestamp, double_latitude, double_longitude, double_arrival, double_departure, address, name}
+[_id, timestamp, device_id, double_latitude, double_longitude, double_arrival, double_departure, address, name, provider, accuracy, label]
+
+
+screen 7325 {timestamp, screen_status}
+[_id, timestamp, device_id, screen_status]
+
+
+wifi 34200 {timestamp, ssid}
+[_id, timestamp, device_id, bssid, ssid, security, frequency, rssi, label]
+
+# NOTE:
+timestamp, REAL, unixtime milliseconds since 1970
+screen_status, INTEGER, 0=off, 1=on, 2=locked, 3=unlocked
+
+
+
+
