@@ -1,3 +1,19 @@
+# Chicago Crime
+
+The goal of this project is to explore the art of visual portraiture. We chose to explore crime rates in Chicago. We developed a visual data narrative and evaluated the data set. 
+
+You can find a detailed description about the project at http://ids-chicago-crime.appspot.com
+
+Author: 
+Javier Argota Sanchez-Vaquerizo, Architect/Urban Planner
+Erin Dieringer, UI Designer/Web Developer
+Amanda Johnson, UX Designer/Qualitative Researcher
+Hexing Ren, Data Analyst/Engineer
+
+Resources: https://www.kaggle.com/currie32/crimes-in-chicago
+
+------------------------------------------------------------------------------------------------------------------------------
+
 ## Python Flask Skeleton for Google App Engine
 
 A skeleton for building Python applications on Google App Engine with the
