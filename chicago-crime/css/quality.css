@@ -1,0 +1,36 @@
+/* PAY SPECIAL ATTETION TO THIS PIECE OF CODE */
+/* THE SECRETE OF MAKING IFRAME RESPONSIVE */
+/* SOURCE: https://answers.squarespace.com/questions/141702/i-cant-get-my-google-sheet-to-be-responsive-what-a.html */
+#Iframe-Liason-Sheet {
+	max-width: 1000px;
+	max-height: 600px;
+	overflow: hidden;
+ }
+  /* inner wrapper: make responsive */
+ .responsive-wrapper {
+	position: relative;
+	height: 0;  /* gets height from padding-bottom setting */
+	-webkit-overflow-scrolling: touch;
+	overflow: auto;
+ }
+ .responsive-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+ }
+ /* padding-bottom = h/w as a % */
+ .responsive-wrapper-wxh-1000x600 {
+	padding-bottom: 363.6364%;
+ }
+ .iframe-border {
+	border: 1px solid #D0D0D0;
+ }
+ .center-block-horiz {
+	margin-left: auto !important;
+	margin-right: auto !important;
+ }
