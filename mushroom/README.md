@@ -1,8 +1,8 @@
 # Mushroom
 
-The goal of this project is to explore the art of visual portraiture. We chose to explore crime rates in Chicago. We developed a visual data narrative and evaluated the data set. 
+The goal of this project is to develop a data centered application which explores and tells a story about a data set. We chose to explore the question whether a mushroom is edible or not.
 
-You can find a detailed description about the project at http://ids-chicago-crime.appspot.com
+You can find a detailed description about the project at http://ids-mushroom.appspot.com
 
 Author: 
 Javier Argota Sanchez-Vaquerizo, Architect/Urban Planner
@@ -10,7 +10,7 @@ Erin Dieringer, UI Designer/Web Developer
 Amanda Johnson, UX Designer/Qualitative Researcher
 Hexing Ren, Data Analyst/Engineer
 
-Resources: https://www.kaggle.com/currie32/crimes-in-chicago
+Resources: https://www.kaggle.com/uciml/mushroom-classification
 
 ------------------------------------------------------------------------------------------------------------------------------
 ## Python Flask Skeleton for Google App Engine
