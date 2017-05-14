@@ -1,0 +1,289 @@
+D<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Mushroom</title>
+	<link rel="icon" href="favicon.ico">
+
+	 <!-- jquery -->
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<link href="/css/custom.css" rel="stylesheet" type="text/css">
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/data">Data Exploration</a></li>
+            <li><a href="/about">Our Team</a></li>
+            <li ><a href="/slides">Final Presentation</a></li>
+          </ul>
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="http://www.hexingren.com/data-pipeline">Back</a></li>
+		  </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	
+
+    <div class="container">
+		<div class="jumbotron" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/21/Family_of_Mushrooms.jpg); background-size:100%; height: 300px%"> 
+			<h1 style="color:white;"> IDS Final Project: Data Driven Mushroom Hunting </h1>
+			<p class="jumbotron" style="color:white;"> Welcome to Hunting for Mushrooms! What is the number one question expert mushroom hunters are asked? Is this mushroom edible
+			or not? This is a tricky question for mushroom experts since you really have to learn the species one by one to be certain. Currently, there is no way to test, no 
+			chemical to apply, and no machine to use  to decide if a mushroom is poisonous or not. You have to make an identification down to the species level. This website will 
+			help break down some of the characteristics to look for in mushrooms to help make identifying mushrooms easier. We have used a data-driven approach to looking for
+			mushrooms. We have explored a dataset that takes into account certain characteristics of mushrooms from the National Audubon Society from the Agaricus and Lepiota 
+			family, home to the most commonly cultivated mushroom (Agaricus bisporus). </p>
+		</div>
+
+		<div class = "warning" >
+			<h3 > Disclaimer </h3>
+			This website includes information concerning identification and the edibility of wild mushrooms, but it is not intended to be a manual for their safe consumption. Anyone wanting 
+			to eat wild mushrooms needs to be absolutely 100% sure of their identification and should consult an experienced person in mushroom edibility before eating any wild mushroom, 
+			especially if they do not feel confident in making an identification. There are over 20 deaths per year resulting from mushroom poisonings. Illness and even death can occur from 
+			ingesting wild mushrooms. Any person who ingests mushrooms or any other potentially dangerous fungi does so at their own risk! If you are new to mushrooming, join a local club to 
+			go on live forays with knowledgeable mycologists that can correctly identify mushrooms. When in doubt, throw it out!  </p>
+		</div>
+	
+		<h3>When to go Mushroom Hunting </h3>
+		<p>You can find mushrooms growing all year round, but the best times to go mushroom hunting is in the spring to fall. Mushrooms typically grow well in moist environments so the 
+		ideal time to go would be right after a rainfall.  </p>
+		
+		<h3>Tips to Avoiding Poisonous Mushrooms</h3>
+		<p>Although no simple test can determine whether a mushroom is edible or poisonous, there are some rules of thumb that can be helpful to avoid poisonous mushrooms: 
+		<ol>
+
+				<li> Do not eat any Amanita species and be especially careful in identifying Amanita look-alikes or any other white mushroom. They contain some of the most deadly
+				mushrooms like the Destroying Angel and the Death Cap. </li>
+				<br>
+				<div id="container">
+					<div class="box">
+						<img class="photorow" src="/images/Death Cap Mushroom.jpg" alt="death cap" style="height:200px;"/> 
+					</div>	
+					<div class="box">
+						<img class="photorow" src="/images/Destroying Angel.jpg" alt="destorying angel" style="height:200px;"/> 
+						
+					</div>
+				</div>
+				<br>
+				<li> Avoid little brown mushrooms (LBM’s) and large brownish mushroom, especially those with pinkish, brownish, purple-brown, or blackish gills. </li>
+				<li> Avoid false morels. </li>
+		</ol>
+  </p>
+		<br>
+		
+		<br>
+		
+		<h2 style="text-align:center;"> Mushroom Features </h2>
+		<br>
+		 </div><!-- /.container -->
+
+	   
+	  <!-- Carousel
+	    ================================================== -->  
+	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Wrapper for slides -->
+		    <div class="row">
+		        <div class="col-xs-offset-3 col-xs-6"> 
+		            <div class="carousel-inner">
+		                <div class="item active" >
+		                    <div class="carousel-content" style="height:500px;">
+		                        <div>
+		                            <h3>Habitat</h3>
+		                            <p>Although mushrooms are usually considered members of the plant kingdom, they differ from most plants in that they lack chlorophyll and must rely on 
+		                            organic material for nutrition. They do this in three ways, as saprophytes, and parasites, and as mycorrhizae: </p>
+		                            <p> <ol>
+		                            	<li>Saprophytes live on dead organic matter, including dead wood, the dead tissue of living trees, dung, leaf litter, or conifer litter. </li>
+										<li> Parasites attack living plants or animals. </li>
+										<li> Mycorrhizal mushrooms have a symbiotic relationship with plants, usually either trees or shrubs.  </li>
+		                            </p></ol>
+		                            <img id="habitat" src="/images/Agaricus_bisporus.jpg" alt="mushroom" >
+		                        </div>
+		                    </div>
+		                </div>
+		                <div class="item" style="height:500px;">
+		                    <div class="carousel-content">
+		                        <div>
+		                            <h3>Population</h3>
+		                            <p>The mushrooms population and the way it grows can say a lot about the species. We will go over a few of the key attributes to look for in determining 
+		                            a mushroom’s population.</p>
+		                            <h4>Solitary</h4>                            
+		                            <p>When you find a mushroom of any kind, it's usually a good bet that it's not alone. But for many species, additional mushrooms may be spread far apart, 
+		                            or may mature at different times in the same area. Many of the fungi that produce large mushrooms, especially the Amanitas and Boletes, tend to have considerable
+		                            space between solitary fruiting spots without any particular pattern. When you find a one mushroom with none of the same species around it is considere
+		                        	<h4>Clustered</h4>                            
+		                            <p>Many of the saprotrophic fungi are known to grow in clusters. The definition of a cluster is where many mushrooms grow from a single point of origin. Clustered 
+		                            growth can be a major diagnostic character for many fungi. Some of the most well known clustering mushrooms are Gymnopilus and Naematoloma.</p>
+		                        	<h4>Abundant</h4>                            
+		                            <p>Saying that mushrooms are abundant is basically saying that many individual fruitings can be found in a relatively small area, this is also called a troop. Troops can 
+		                            be formed from gregarious fruitings of a single fungus within a single food source, such as many mushrooms in a log growing on a log, or  it could be many independant 
+		                            fruitings within a heavily colonized substrate such as mushrooms scattered across the forest humus, which is the organic component of soil, formed by the decomposition 
+		                            of leaves and other plant material by soil microorganisms.</p>
+		                        </div>
+		                    </div>
+		                </div>
+		       			<div class="item" style="height:500px;">
+		                    <div class="carousel-content">
+		                    	<div>
+					              <img src= "/images/mushroom wireframes_Population.png" alt = 'mushroon' style="height:250px;" />
+					            </div>
+					         </div> 
+					    </div>
+		               	<div class="item" style="height:500px;">
+					            <div class="carousel-content">
+					              <h3>Overview of Visual Cues</h3>
+					              <p>Overview of all of the visual cues we will cover from the cap to the volva. </p>
+					              <img src= "/images/Overview of Mushroom Attributes_inverted.png" alt = 'mushroon' style="height:350px;"/>
+					            </div>
+					    </div>
+					    <div class="item" style="height:500px;">
+					         <div class="carousel-content">
+						            <h3>Cap Shape</h3>
+						            <p>Although not all mushrooms contain caps, the caps are usually one of the most conspicuous characteristics of a mushroom. There are 6 different types of cap shapes we 
+						             will go over the visual cues below: </p>
+						             <img id="cap" src= "/images/mushroom wireframes_Mushroom Caps 2.png" alt = 'mushroon' style="height:350px;" />
+					         </div>
+					    </div>
+		       			<div class="item" style="height:500px;">
+		                    <div class="carousel-content">
+		                    	<div>
+					              <h3>Gills</h3>
+					              <p>Although the caps are important indicators of mushrooms, looking under the cap is important to make a proper identification. The gills are platelike structures on the 
+					              underside of the cap; they radiate out from the stalk and produce spores, which is how mushrooms reproduce. </p>
+					              <img  src= "/images/mushroom.jpg" alt = 'mushroon' style="height:275px;" />
+					            </div>
+					         </div> 
+					    </div>
+					   <div class="item" style="height:500px;">
+					        <img class="slide" src= "/images/mushroom wireframes_Mushroom Colors.png" alt = 'mushroon' style="height:100%;"/>
+					    </div>
+					    <div class="item" style="height:500px;">
+					        <img class="slide" src= "/images/mushroom wireframes_Gill Color.png" alt = 'mushroon' style="height:100%;"/>
+					    </div>
+					    <div class="item" style="height:500px;">
+					        <img class="slide" src= "/images/mushroom wireframes_Gill Size .png" alt = 'mushroon' style="height:100%;"/>
+					    </div>
+					  <div class="item" style="height:500px;">
+		                    <div class="carousel-content">
+		                    	<div>
+					              <h3>Spore Print Color</h3>
+					              <p>A spore print is essential for accurate identification of many mushrooms. It's simple to make a spore print from a mushroom.<p>
+					              <p> <ol> 
+					              	<li>Remove the stem by carefully cutting it off where it meets the cap.</li>
+					              	<li>Put the cap on a clean piece of paper (fresh typing paper for instance), gills facing down. </li>
+					              	<li>Cover the paper and cap with a glass, a jar or tub of some sort - to maintain the humidity 
+					              	around the cap. Sometimes the spores fall more readily if you place a drop of water on the cap before you cover it. </li>
+					              	<li>Leave it for a few hours (typically overnight) and then remove the jar and cap. </li>
+					              	<li>Cover the print with a clean paper napkin and let it dry until the paper is not moist anymore. </li>
+					              </ol></p>
+					              <p>Over the hours, mature spores will have been released from the gills and fallen onto the paper. What you see in a spore print, is a mass of hundreds of thousands or
+					              millions of spores. In this quantity the color is easy to see. The most common spore colors are white and various shades of brown. If the spores are white or buff, you
+					              obviously won't see them very well on white paper. It might be a good idea to place the cap halfway on white and half on dark paper.</p>
+					              <p>Note that the color of the gills may not be the same as the color of the spores. If your spore print is very weak (or not there) put the cap and tub back down and leave
+					              it for longer - even overnight. Some species take a long time to build up a good spore deposit. It's also possible that the cap had already started to dry out when you collected
+					              it. It's hard to get spore prints from mushrooms with small, thin caps as they dry out very quickly. </p>
+					            </div>
+					         </div> 
+					    </div>
+					    <div class="item" style="height:500px;">
+					        <img class="slide" src= "/images/mushroom wireframes_spore Color.png" alt = 'mushroon' style="height:100%;"/>
+					    </div>
+					    <div class="item" style="height:500px;">
+					            <div class="carousel-content">
+					              <h3>Ring Type</h3>
+					              <p>Many species have a ring, a skirt or bandlike tissue, or a zone of fibers on the stalk left by the partial veil as the mushroom expands. Other have a cup 
+					              (also called a volva) or bits of tissue on the stalk base. </p>
+					              <img class="slide" src= "/images/mushroom wireframes_Mushroom Veils.png" alt = 'mushroon' style="height:350px;"/>
+					            </div>
+					    </div>
+					    <div class="item" style="height:500px;">
+					            <div class="carousel-content">
+					              <h3>Stalk Surface Above and Below the Ring</h3>
+					              <p>Some mushrooms may have rings around them, and the surface above and below that ring can be an important characteristic of a mushroom. </p>
+					              <img src= "/images/mushroom wireframes_Stalk Textures.png" alt = 'mushroon' style="height:350px;"/>
+					            </div>
+					    </div>
+					    <div class="item" style="height:500px;">
+					            <div class="carousel-content">
+					              <h3>Stalk Shape</h3>
+					              <p>Most gilled mushrooms have a stalk. Stalks come in various shapes some are equal, or have the same width from top to bottom. Others are club-shaped. The base of the stalk
+					              could be bulbous, have a cap or volva, tapering to a rootlike growth at the base, or it may have runner or rhizomorphs growing out of them. </p>
+					              <img  src= "/images/mushroom wireframes_Mushroom Stalks .png" alt = 'mushroon' style="height:350px;"/>
+					            </div>
+					    </div>     
+		            </div>
+		        <!-- </div> -->
+		    </div>
+	    <!-- Controls --> 
+	    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	        <span class="sr-only">Previous</span>
+	      </a>
+	      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+	        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	        <span class="sr-only">Next</span>
+	      </a>
+
+	</div>
+	    
+	    <br>
+	    <br>
+	    <br>
+	</div>
+	
+	 <!-- RShiny
+	    ================================================== -->  
+	 <div class="container" id="iframe">
+		<iframe src="https://ids-mushrooms.shinyapps.io/mushroomsclassifier/" style="width:100%;height:600px;"></iframe>
+	
+		<footer class="container-footer text-center"><p class="copyright text-muted small">&copy; <a href="/about">Interactive Data Science Team</a></p></footer>
+	</div>
+	<br>
+	 <br>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  
+
+  
+
+
+
+</html>
